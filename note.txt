@@ -1,0 +1,77 @@
+   
+     console.log(data.id)
+    const message = data
+      
+      localStorage.setItem("message", message);
+      
+      this.setState({ message });
+      console.log(localStorage)
+
+---------------------------
+const check = "id:1"
+      if(data.includes('id:1')) {
+    console.log(check)}
+------------------------------
+
+
+    this.setState(prevState =>{         
+        const newarray = prevState.todoitem.map(get =>{
+
+            if(this.state.id === 1 ){
+                
+                const message = data
+                localStorage.setItem("message", message);
+      
+            }else if (this.state.id === 2){
+                
+                const message2 = data
+                localStorage.setItem("message2", message2);
+                
+            }else if (this.state.id === 3){
+                
+                const message3 = data
+                 localStorage.setItem("message3", message3);
+
+            }else {
+                let a
+            }
+            return get
+        })
+        return {
+            message: data,
+            id: newarray
+        }
+    })
+================================================
+
+this.setState(prevState =>{         
+        const newarray = prevState.todoitem.map(get =>{
+            
+            if(data.includes('id:1')){
+                
+                const message = data
+                localStorage.setItem("message", message);
+                console.log(get.value)
+            }else if (data.includes('id:2')){
+              
+                const message2 = data
+                localStorage.setItem("message2", message2);
+                get.text = data
+            }else if (data.includes('id:3')){
+                
+                const message3 = data
+                 localStorage.setItem("message3", message3);
+                 get.text = data
+            }else {
+                let a
+            }
+            return get
+        })
+        return {
+           id: newarray,
+           message: data,
+           message2: data,
+           message3: data,
+        }
+    })
+    
